@@ -1,0 +1,51 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.mypy_cache/
+.pyre/
+.pytype/
+.pytest_cache/
+.ruff_cache/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Coverage
+.coverage
+.coverage.*
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets / local-only configs
+.env
+.env.*
+!.env.example
+secrets.json
+*_secret.ini
+*_local.ini
+
+# Generated per-run artifacts (the canonical demo files in output/ stay tracked)
+output/notebook_*
+output/certificate_*.pdf
+
+# IDE local state (keep workspace-level settings.json for shared cSpell words)
+.vscode/launch.json
+.vscode/*.local.*
+.idea/
