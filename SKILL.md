@@ -9,7 +9,11 @@ description: Generate configurable CompleteTech LLC Agentic Development Services
 
 Generate a configurable CompleteTech LLC Agentic Development Services Agreement PDF with optional cover page, letterhead, header, footer, watermark, and #10 addressed envelope.
 
-## Files
+## System Boundary
+
+This skill owns agreement-package generation and branded contract/envelope artifacts. Use `agentic-proposal-skill` for commercial scope before signature, `agentic-invoice-skill` for payment requests, `agentic-delivery-skill` after approval, and counsel-reviewed source terms for real legal commitments. Do not use this skill to invent legal terms, client facts, pricing, authority, or signature approval.
+
+## Resource Guide
 
 - `generate_contract.py` - contract and envelope generator.
 - `templates/agentic_development_agreement.md.j2` - contract template with Jinja2 placeholders.
@@ -27,6 +31,15 @@ Generate a configurable CompleteTech LLC Agentic Development Services Agreement 
 
 Do not invent real legal or company facts. Use `TBD` for unknown values unless the user explicitly asks for a demo placeholder.
 
+## Quality Rules
+
+- Do not invent legal terms, company facts, client facts, authority, acceptance, pricing, or signature approval.
+- Preserve demonstration disclaimers unless the user supplies replacement counsel-reviewed terms.
+- Keep unknown provider, client, agreement, delivery, and agentic-development values as `TBD`.
+- Treat generated PDFs and Markdown as draft artifacts until the user confirms the terms and facts.
+- Keep contract generation separate from proposals, invoices, delivery records, security signoff, and customer success notes.
+- Do not overwrite user-specific config or generated output without checking whether it contains client-specific facts that should be preserved.
+
 ## Configuration Toggles
 
 In `[branding]`:
@@ -42,7 +55,7 @@ envelope_enabled = yes
 
 Set any toggle to `no` to disable that feature. The envelope is generated as a separate #10 envelope PDF when `envelope_enabled = yes`.
 
-## How to Run
+## Generator
 
 ```bash
 pip install -r requirements.txt
@@ -66,6 +79,7 @@ python generate_contract.py --config config.ini --out output/no_envelope_contrac
 4. Run `generate_contract.py`.
 5. Return links to the PDF, Markdown source, and ZIP or folder as appropriate.
 6. Remind the user that the document is a demonstration template, not legal advice, unless the user already states that their own reviewed legal terms are being inserted.
+7. Preserve existing client-specific outputs unless the user asks to regenerate or replace them.
 
 ## Customizing the Contract
 

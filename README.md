@@ -2,6 +2,24 @@
 
 A configurable, branded PDF skill for CompleteTech LLC Agentic Development Services Agreements.
 
+## Workflow Diagram
+
+```mermaid
+flowchart LR
+  A[Provider and client facts] --> B[Config and overrides]
+  C[Agentic development terms] --> B
+  B --> D[Agreement template render]
+  D --> E[Contract PDF]
+  D --> F[Filled Markdown]
+  D --> G[Addressed envelope]
+  classDef source fill:#eef6ff,stroke:#3778c2,color:#102a43;
+  classDef process fill:#fff7e6,stroke:#c97a12,color:#3d2600;
+  classDef output fill:#eefaf0,stroke:#2f8f46,color:#12351d;
+  class A,C source;
+  class B,D process;
+  class E,F,G output;
+```
+
 ## Quick Start
 
 ```bash
