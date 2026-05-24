@@ -55,6 +55,27 @@ The contract generator creates:
 - A filled Markdown source file beside the PDF unless `--markdown-out` is provided.
 - A separate printable #10 envelope PDF unless disabled.
 
+## Example
+
+![Agreement package preview](assets/examples/example.png)
+
+**Agreement package: Agentic Support Triage Pilot**
+
+```bash
+python generate_contract.py \
+  --config config.ini examples/minimum_client_override.ini \
+  --out output/northstar_support_triage_agreement.pdf \
+  --markdown-out output/northstar_support_triage_agreement.md \
+  --envelope-out output/northstar_support_triage_envelope.pdf
+```
+
+Example package:
+
+- Contract: Agentic Development Services Agreement for a bounded support triage pilot.
+- Governance: human approval required before any external customer response.
+- Delivery inputs: approved service summary, evaluation plan, monitoring plan, excluded uses, fee, and payment terms.
+- Packaging handoff: use `agentic-envelope-skill` for final recipient metadata, attachment manifest, and delivery-readiness review.
+
 ## Overrides
 
 Pass multiple INI files; later files override earlier files:
