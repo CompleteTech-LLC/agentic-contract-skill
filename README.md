@@ -1,6 +1,14 @@
 # Agentic Contract Skill
 
+<p align="center">
+  <img src="assets/logo.png" alt="CompleteTech LLC logo" width="260">
+</p>
+
 A configurable, branded PDF skill for CompleteTech LLC Agentic Development Services Agreements.
+
+## About
+
+Part of the CompleteTech LLC agentic services skill library. This skill generates branded agreement artifacts for bounded agentic development services using verified provider, client, project, and governance facts.
 
 ## Workflow Diagram
 
@@ -73,3 +81,7 @@ envelope_enabled = yes
 ## Legal Note
 
 The contract template is a demonstration template, not legal advice. Replace it with counsel-reviewed terms before any real engagement.
+
+## License
+
+Code, templates, and documentation are licensed under the MIT License. CompleteTech LLC names, logos, seals, and brand assets are reserved and are not licensed for reuse except to identify this project. See `LICENSE` and `BRAND_ASSETS.md`.
