@@ -1,6 +1,20 @@
 ---
 name: agentic-contract-skill
-description: Generate configurable CompleteTech LLC Agentic Development Services Agreement PDFs with optional cover page, letterhead, header, footer, watermark, filled Markdown source, and printable addressed envelope. Use when Codex needs to create or customize agentic development contracts, contract templates, client override configs, or branded contract/envelope artifacts.
+description: >-
+  Generate configurable CompleteTech LLC Agentic Development Services Agreement PDFs with optional cover page, letterhead, header, footer, watermark, filled Markdown source, and printable addressed envelope. Use when Codex needs to create or customize agentic development contracts, contract templates, client override configs, or branded contract/envelope artifacts.
+version: 1.0.0
+metadata:
+  openclaw:
+    skillKey: agentic-contract-skill
+    homepage: https://github.com/CompleteTech-LLC/agentic-contract-skill
+    requires:
+      bins:
+        - python3
+    install:
+      - kind: uv
+        package: reportlab>=4.0
+      - kind: uv
+        package: jinja2>=3.1
 ---
 
 # Agentic Contract Skill

@@ -10,6 +10,18 @@ A configurable, branded PDF skill for CompleteTech LLC Agentic Development Servi
 
 Part of the CompleteTech LLC agentic services skill library. This skill generates branded agreement artifacts for bounded agentic development services using verified provider, client, project, and governance facts.
 
+## OpenClaw / ClawHub Metadata
+
+- Skill key: `agentic-contract-skill`
+- Version-ready metadata: `1.0.0`
+- Homepage: https://github.com/CompleteTech-LLC/agentic-contract-skill
+- README: https://github.com/CompleteTech-LLC/agentic-contract-skill#readme
+- Runtime binaries: `python3`
+- Python packages: `reportlab>=4.0`, `jinja2>=3.1`
+- Intended registry/discovery tags: `latest`, `complete-tech`, `codex-skill`, `agentic-development`, `agentic-workflows`, `contract`, `agreement`, `pdf-generator`
+- License: repository code, templates, and documentation use MIT; ClawHub publishing is intentionally skipped for now.
+- Brand assets: CompleteTech LLC names, logos, seals, and brand assets are reserved; see `BRAND_ASSETS.md`.
+
 ## Workflow Diagram
 
 ```mermaid
