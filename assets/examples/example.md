@@ -1,33 +1,33 @@
 # Agentic Development Services Agreement
 
-**Contract ID:** ADSA-TBD-0001  
-**Agreement Date:** 2026-05-10  
-**Effective Date:** TBD  
-**Project:** TBD Agentic Development Project
+**Contract ID:** ADSA-2026-0142  
+**Agreement Date:** 2026-05-18  
+**Effective Date:** 2026-05-25  
+**Project:** Customer Support Email Triage Agent (Pilot)
 
 > Demonstration notice: this template is intentionally generic and is provided only to demonstrate programmatic contract generation. It is not legal advice and should be replaced or reviewed before real use.
 
 ## 1. Parties
 
-This Agentic Development Services Agreement (the **"Agreement"**) is entered into by and between **CompleteTech LLC**, a Limited Liability Company formed in TBD with offices at TBD, TBD, TBD TBD, USA (**"Provider"**), and **TBD Client LLC**, a Corporation formed in New York with offices at TBD, Floor 8, TBD, TBD TBD, USA (**"Client"**). Provider and Client may be referred to individually as a **"Party"** and together as the **"Parties"**.
+This Agentic Development Services Agreement (the **"Agreement"**) is entered into by and between **CompleteTech LLC**, a Limited Liability Company formed in Wyoming with offices at 30 N Gould St, Ste R, Sheridan, WY 82801, USA (**"Provider"**), and **Northwind Trading Co.**, a Corporation formed in Washington with offices at 240 Harbor Point Blvd, Suite 700, Seattle, WA 98121, USA (**"Client"**). Provider and Client may be referred to individually as a **"Party"** and together as the **"Parties"**.
 
 | Party | Notice Details |
 |---|---|
-| Provider | CompleteTech LLC; TBD, TBD, TBD TBD, USA; Timothy.Gregg@complete.tech; 1-844-TECH-WIN |
-| Client | TBD Client LLC; TBD, Floor 8, TBD, TBD TBD, USA; legal@democlient.test; +1 (718) 555-0199 |
+| Provider | CompleteTech LLC; 30 N Gould St, Ste R, Sheridan, WY 82801, USA; Timothy.Gregg@complete.tech; 1-844-TECH-WIN |
+| Client | Northwind Trading Co.; 240 Harbor Point Blvd, Suite 700, Seattle, WA 98121, USA; legal@northwindtrading.example; +1 (206) 555-0142 |
 
 ## 2. Engagement Summary
 
-Provider will perform agentic development services for Client under this Agreement and any written statement of work, order form, or change order signed or otherwise approved by both Parties. The initial project summary is: **Design, build, evaluate, and document an agentic software workflow for the Client's internal demonstration environment.**
+Provider will perform agentic development services for Client under this Agreement and any written statement of work, order form, or change order signed or otherwise approved by both Parties. The initial project summary is: **Design, build, evaluate, and document a bounded agentic email-triage workflow that classifies inbound customer support email, drafts suggested replies, and routes each case to the correct queue, with human approval required before any customer-facing send.**
 
 | Item | Current Configuration |
 |---|---|
-| Project name | TBD Agentic Development Project |
-| System description | Multi-step agentic workflow with tool routing, retrieval, approval gates, logging, and deployment documentation. |
-| Autonomy level | Bounded autonomy: the system may recommend and draft actions but requires human approval before external submission, production changes, purchases, or user-facing publication. |
-| Human review | Required for release approvals, data export, external communications, production actions, and any material business decision. |
-| Model or stack | Configurable LLM/API stack selected in the statement of work; demo default uses placeholder model identifiers. |
-| Deployment environment | Client-controlled sandbox or non-production environment unless a production deployment is expressly added by written change order. |
+| Project name | Customer Support Email Triage Agent (Pilot) |
+| System description | Multi-step support-email triage agent: intake classification, reply drafting with retrieval over approved help-center content, queue routing, logging, and a mandatory human approval gate before any outbound customer reply. |
+| Autonomy level | Bounded autonomy: the agent classifies, drafts, and routes, but a support agent must approve or edit every customer-facing reply before it is sent. |
+| Human review | Required before any customer-facing send, queue escalation to a human specialist, refund or credit suggestion, and any change to production routing rules. |
+| Model or stack | Configurable hosted LLM API plus a retrieval index over Northwind's approved help-center articles; specific model identifiers fixed in the statement of work. |
+| Deployment environment | Northwind-controlled sandbox mailbox and staging helpdesk until acceptance; production rollout only by written change order. |
 
 ## 3. Scope of Services and Deliverables
 
@@ -44,7 +44,7 @@ Out-of-scope services include production operations, legal compliance certificat
 
 ## 4. Timeline, Review, and Acceptance
 
-The target delivery schedule is: Discovery: 1 week; Prototype: 4 weeks; Evaluation: 2 weeks; Documentation and handoff: 1 week; buffer: 2 weeks. The Parties may adjust dates by mutual written agreement when delays are caused by dependency changes, delayed feedback, unavailable Client systems, new requirements, or change orders.
+The target delivery schedule is: Discovery: 1 week; Prototype: 3 weeks; Evaluation: 2 weeks; Documentation and handoff: 1 week; buffer: 1 week. The Parties may adjust dates by mutual written agreement when delays are caused by dependency changes, delayed feedback, unavailable Client systems, new requirements, or change orders.
 
 Client will review each material deliverable within 10 calendar days after delivery. A deliverable is accepted when Client approves it in writing, uses it in a non-test context, or does not provide a written rejection with specific deficiencies during the review period. Provider will use reasonable efforts to correct nonconformities that materially deviate from the accepted scope.
 
@@ -53,8 +53,8 @@ Client will review each material deliverable within 10 calendar days after deliv
 | Term | Value |
 |---|---|
 | Fee type | Fixed fee |
-| Fee amount | TBD |
-| Deposit | USD 6,000 due at signing |
+| Fee amount | USD 28,000 |
+| Deposit | USD 8,400 due at signing |
 | Payment terms | Net fifteen (15) days from invoice date; undisputed late amounts may accrue service charges stated in an accepted statement of work. |
 | Included revisions | Two (2) included review rounds per major deliverable. |
 
@@ -72,9 +72,9 @@ Either Party may request changes to scope, timelines, fees, deliverables, assump
 
 The Parties acknowledge that agentic workflows can combine prompts, tools, APIs, memory, retrieval, evaluators, automations, and human approvals. The following controls apply unless replaced by a signed statement of work:
 
-- **Human-in-the-loop controls:** Required for release approvals, data export, external communications, production actions, and any material business decision.
-- **Evaluation plan:** Test cases, prompt-injection checks, tool-permission checks, regression examples, and acceptance demonstrations.
-- **Monitoring plan:** Basic run logs, issue register, handoff checklist, and recommended post-launch monitoring controls.
+- **Human-in-the-loop controls:** Required before any customer-facing send, queue escalation to a human specialist, refund or credit suggestion, and any change to production routing rules.
+- **Evaluation plan:** Labeled triage test set, reply-quality rubric, prompt-injection checks on inbound email, routing-accuracy regression suite, and an acceptance demonstration on held-out cases.
+- **Monitoring plan:** Run logs, misclassification register, approval-override tracking, and recommended post-launch accuracy and escalation dashboards.
 - **Excluded uses:** No regulated medical, legal, financial, employment, housing, insurance, credit, biometric, surveillance, safety-critical, or autonomous production decisioning use unless separately reviewed and documented.
 - **AI-specific notice:** Agentic systems can produce unexpected, incomplete, or incorrect outputs. Client is responsible for human review and operational decisions based on system outputs.
 
@@ -112,7 +112,7 @@ Each party is responsible for claims arising from its own gross negligence, will
 
 ## 15. Term, Suspension, and Termination
 
-The Agreement begins on the Effective Date and continues for the following term: Initial project term of twelve (12) weeks, followed by month-to-month support only if ordered in writing. Either Party may terminate for material breach if the breach is not cured within ten (10) business days after written notice. Provider may suspend work for overdue undisputed invoices, unsafe or unlawful instructions, unavailable dependencies, or Client failure to provide required access.
+The Agreement begins on the Effective Date and continues for the following term: Initial pilot term of eight (8) weeks, followed by month-to-month support only if ordered in writing. Either Party may terminate for material breach if the breach is not cured within ten (10) business days after written notice. Provider may suspend work for overdue undisputed invoices, unsafe or unlawful instructions, unavailable dependencies, or Client failure to provide required access.
 
 Upon termination, Client will pay for accepted work, work performed through termination, approved expenses, and non-cancelable commitments. Sections relating to payment, confidentiality, data return or deletion, intellectual property, limitations of liability, indemnities, dispute resolution, and general terms survive termination.
 

@@ -59,22 +59,23 @@ The contract generator creates:
 
 ![Agreement package preview](assets/examples/example.png)
 
-Full-document preview converted from generated artifact: [example.pdf](assets/examples/example.pdf). Filled source: [example.md](assets/examples/example.md).
+Full-document preview rendered from the generated artifact: [example.pdf](assets/examples/example.pdf). Filled source: [example.md](assets/examples/example.md). Matching envelope: [example-envelope.pdf](assets/examples/example-envelope.pdf).
 
-**Agreement package: Agentic Support Triage Pilot**
+**Agreement package: Northwind Trading Co. — Customer Support Email Triage Agent (Pilot)**
 
 ```bash
 python generate_contract.py \
-  --config config.ini examples/minimum_client_override.ini \
+  --config config.ini examples/northwind_support_triage.ini \
   --out assets/examples/example.pdf \
   --markdown-out assets/examples/example.md \
   --envelope-out assets/examples/example-envelope.pdf
 ```
 
-Example package:
+Example package (realistic demonstration data):
 
-- Contract: Agentic Development Services Agreement for a bounded support triage pilot.
-- Governance: human approval required before any external customer response.
+- Contract: `ADSA-2026-0142`, an 8-week, USD 28,000 fixed-fee Agentic Development Services Agreement between CompleteTech LLC and Northwind Trading Co.
+- System: bounded customer support email-triage agent — classify, draft, and route inbound support email.
+- Governance: human approval required before any customer-facing send; sandbox-only until acceptance.
 - Delivery inputs: approved service summary, evaluation plan, monitoring plan, excluded uses, fee, and payment terms.
 - Packaging handoff: use `agentic-envelope-skill` for final recipient metadata, attachment manifest, and delivery-readiness review.
 
