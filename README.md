@@ -59,7 +59,7 @@ The contract generator creates:
 
 ![Agreement package preview](assets/examples/example.png)
 
-Preview converted from generated artifact: [example.pdf](assets/examples/example.pdf). Filled source: [example.md](assets/examples/example.md).
+Full-document preview converted from generated artifact: [example.pdf](assets/examples/example.pdf). Filled source: [example.md](assets/examples/example.md).
 
 **Agreement package: Agentic Support Triage Pilot**
 
