@@ -1,7 +1,7 @@
 ---
 name: agentic-contract-skill
 description: >-
-  Generate configurable CompleteTech LLC Agentic Development Services Agreement PDFs with optional cover page, letterhead, header, footer, watermark, filled Markdown source, and printable addressed envelope. Use when Codex needs to create or customize agentic development contracts, contract templates, client override configs, or branded contract/envelope artifacts.
+  Generate configurable CompleteTech LLC Agentic Development Services Agreement PDFs with optional cover page, letterhead, header, footer, watermark, filled Markdown source, and legacy printable envelope output. Use when Codex needs to create or customize agentic development contracts, contract templates, client override configs, or branded agreement artifacts from approved terms.
 version: 1.0.0
 metadata:
   openclaw:
@@ -21,11 +21,11 @@ metadata:
 
 ## Purpose
 
-Generate a configurable CompleteTech LLC Agentic Development Services Agreement PDF with optional cover page, letterhead, header, footer, watermark, and #10 addressed envelope.
+Generate a configurable CompleteTech LLC Agentic Development Services Agreement PDF with optional cover page, letterhead, header, footer, watermark, and legacy #10 addressed envelope output.
 
 ## System Boundary
 
-This skill owns agreement-package generation and branded contract/envelope artifacts. Use `agentic-proposal-skill` for commercial scope before signature, `agentic-invoice-skill` for payment requests, `agentic-delivery-skill` after approval, and counsel-reviewed source terms for real legal commitments. Do not use this skill to invent legal terms, client facts, pricing, authority, or signature approval.
+This skill owns agreement content and contract package generation from approved terms. Use `agentic-proposal-skill` for commercial scope before signature, `agentic-invoice-skill` for payment requests, `agentic-envelope-skill` for recipient metadata, attachment manifests, delivery-readiness, and standalone mailing packages, `agentic-delivery-skill` after approval, and counsel-reviewed source terms for real legal commitments. Do not use this skill to invent legal terms, client facts, pricing, authority, or signature approval.
 
 ## Resource Guide
 
@@ -51,7 +51,7 @@ Do not invent real legal or company facts. Use `TBD` for unknown values unless t
 - Preserve demonstration disclaimers unless the user supplies replacement counsel-reviewed terms.
 - Keep unknown provider, client, agreement, delivery, and agentic-development values as `TBD`.
 - Treat generated PDFs and Markdown as draft artifacts until the user confirms the terms and facts.
-- Keep contract generation separate from proposals, invoices, delivery records, security signoff, and customer success notes.
+- Keep contract generation separate from proposals, invoices, delivery records, security signoff, customer success notes, email copy, and delivery packaging decisions.
 - Do not overwrite user-specific config or generated output without checking whether it contains client-specific facts that should be preserved.
 
 ## Configuration Toggles
