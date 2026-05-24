@@ -59,14 +59,16 @@ The contract generator creates:
 
 ![Agreement package preview](assets/examples/example.png)
 
+Preview converted from generated artifact: [example.pdf](assets/examples/example.pdf). Filled source: [example.md](assets/examples/example.md).
+
 **Agreement package: Agentic Support Triage Pilot**
 
 ```bash
 python generate_contract.py \
   --config config.ini examples/minimum_client_override.ini \
-  --out output/northstar_support_triage_agreement.pdf \
-  --markdown-out output/northstar_support_triage_agreement.md \
-  --envelope-out output/northstar_support_triage_envelope.pdf
+  --out assets/examples/example.pdf \
+  --markdown-out assets/examples/example.md \
+  --envelope-out assets/examples/example-envelope.pdf
 ```
 
 Example package:
