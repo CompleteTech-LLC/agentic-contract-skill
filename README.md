@@ -59,7 +59,7 @@ The contract generator creates:
 
 ![Agreement package preview](assets/examples/example.png)
 
-Full-document preview rendered from the generated artifact: [example.pdf](assets/examples/example.pdf). Filled source: [example.md](assets/examples/example.md). Matching envelope: [example-envelope.pdf](assets/examples/example-envelope.pdf).
+Example files: [Markdown](assets/examples/example.md) · [PDF](assets/examples/example.pdf) · [DOCX](assets/examples/example.docx) · [Envelope PDF](assets/examples/example-envelope.pdf).
 
 **Agreement package: Northwind Trading Co. — Customer Support Email Triage Agent (Pilot)**
 
