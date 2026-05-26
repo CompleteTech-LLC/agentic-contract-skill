@@ -2,7 +2,7 @@
 name: agentic-contract-skill
 description: >-
   Generate branded CompleteTech Agentic Development Services Agreement packages from approved provider, client, project, commercial, and governance terms. Use when the user wants configurable contract PDFs, filled Markdown source, and optional envelope output for agentic workflow engagements.
-version: 1.0.7
+version: 1.0.8
 metadata:
   openclaw:
     skillKey: agentic-contract-skill
@@ -121,25 +121,29 @@ python generate_contract.py --config config.ini --out output/no_envelope_contrac
 
 ## Agent Operating Guidance
 
-1. Read the user's business profile or provided inputs.
-2. Update `config.ini` or create an override INI. Keep unknown details as `TBD`.
-3. Ensure demonstration disclaimers remain visible unless the user supplies replacement legal text.
-4. Run `generate_contract.py`.
-5. Return links to the PDF, Markdown source, and ZIP or folder as appropriate.
-6. Remind the user that the document is a demonstration template, not legal advice, unless the user already states that their own reviewed legal terms are being inserted.
-7. Preserve existing client-specific outputs unless the user asks to regenerate or replace them.
+| Step | Action |
+|---|---|
+| 1 | Read the user's business profile or provided inputs. |
+| 2 | Update `config.ini` or create an override INI; keep unknown details as `TBD`. |
+| 3 | Preserve demonstration disclaimers unless the user supplies replacement legal text. |
+| 4 | Run `generate_contract.py`. |
+| 5 | Return links to the PDF, Markdown source, and ZIP or folder as appropriate. |
+| 6 | Note that the document is a demonstration template, not legal advice, unless the user supplied reviewed legal terms. |
+| 7 | Preserve existing client-specific outputs unless the user asks to regenerate or replace them. |
 
 ## Customizing the Contract
 
-Edit `references/agentic_development_agreement.md` to change clauses, add jurisdiction-specific language, or include business-specific statement-of-work text. The generator supports a practical Markdown subset:
+Edit `references/agentic_development_agreement.md` to change clauses, add jurisdiction-specific language, or include business-specific statement-of-work text.
 
-- `#`, `##`, and `###` headings.
-- Paragraphs.
-- `-` bullet lists.
-- Simple Markdown tables.
-- `**bold**` inline emphasis.
-- Block quotes beginning with `>`.
-- `[PAGE_BREAK]` for manual page breaks.
+| Markdown Feature | Supported Form |
+|---|---|
+| Headings | `#`, `##`, and `###` |
+| Paragraphs | Plain text separated by blank lines |
+| Lists | `-` bullet lists |
+| Tables | Simple Markdown tables |
+| Emphasis | `**bold**` inline emphasis |
+| Callouts | Block quotes beginning with `>` |
+| Page breaks | `[PAGE_BREAK]` |
 
 ## Dependencies
 

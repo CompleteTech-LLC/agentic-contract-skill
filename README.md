@@ -13,7 +13,7 @@ Part of the CompleteTech LLC agentic services skill library. This skill generate
 ## OpenClaw / ClawHub Metadata
 
 - Skill key: `agentic-contract-skill`
-- Version-ready metadata: `1.0.7`
+- Version-ready metadata: `1.0.8`
 - Homepage: https://github.com/CompleteTech-LLC/agentic-contract-skill
 - README: https://github.com/CompleteTech-LLC/agentic-contract-skill#readme
 - Runtime binaries: `python3`
