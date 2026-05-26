@@ -2,7 +2,7 @@
 name: agentic-contract-skill
 description: >-
   Generate configurable CompleteTech LLC Agentic Development Services Agreement PDFs with optional cover page, letterhead, header, footer, watermark, filled Markdown source, and legacy printable envelope output. Use when Codex needs to create or customize agentic development contracts, contract templates, client override configs, or branded agreement artifacts from approved terms.
-version: 1.0.0
+version: 1.0.1
 metadata:
   openclaw:
     skillKey: agentic-contract-skill
@@ -32,7 +32,7 @@ This skill owns agreement content and contract package generation from approved 
 ## Resource Guide
 
 - `generate_contract.py` - contract and envelope generator.
-- `templates/agentic_development_agreement.md.j2` - contract template with Jinja2 placeholders.
+- `references/agentic_development_agreement.md.j2` - packaged contract template with Jinja2 placeholders.
 - `config.ini` - declarative provider, client, agreement, agentic-development, branding, and envelope settings.
 - `client_config.example.ini`, `examples/minimum_client_override.ini` - override examples.
 - `assets/logo.png` - primary CompleteTech logo.
@@ -99,7 +99,7 @@ python generate_contract.py --config config.ini --out output/no_envelope_contrac
 
 ## Customizing the Contract
 
-Edit `templates/agentic_development_agreement.md.j2` to change clauses, add jurisdiction-specific language, or include business-specific statement-of-work text. The generator supports a practical Markdown subset:
+Edit `references/agentic_development_agreement.md.j2` to change clauses, add jurisdiction-specific language, or include business-specific statement-of-work text. The generator supports a practical Markdown subset:
 
 - `#`, `##`, and `###` headings.
 - Paragraphs.
