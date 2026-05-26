@@ -29,11 +29,11 @@ ENV/
 
 .env
 .env.*
-!.env.example
 secrets.json
 *_secret.ini
 *_local.ini
 *.tmp
+scripts/validate_quality.py
 .DS_Store
 Thumbs.db
 desktop.ini

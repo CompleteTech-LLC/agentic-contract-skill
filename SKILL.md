@@ -2,7 +2,7 @@
 name: agentic-contract-skill
 description: >-
   Generate configurable CompleteTech LLC Agentic Development Services Agreement PDFs with optional cover page, letterhead, header, footer, watermark, filled Markdown source, and legacy printable envelope output. Use when Codex needs to create or customize agentic development contracts, contract templates, client override configs, or branded agreement artifacts from approved terms.
-version: 1.0.2
+version: 1.0.3
 metadata:
   openclaw:
     skillKey: agentic-contract-skill
@@ -12,11 +12,11 @@ metadata:
         - python3
     install:
       - kind: uv
-        package: pyyaml>=6.0
+        package: pyyaml==6.0.3
       - kind: uv
-        package: reportlab>=4.0
+        package: reportlab==4.5.1
       - kind: uv
-        package: jinja2>=3.1
+        package: jinja2==3.1.6
 ---
 
 # Agentic Contract Skill
@@ -119,10 +119,6 @@ pip install -r requirements.txt
 
 The generator uses `reportlab` for PDF creation and `jinja2` for contract template rendering.
 
-## Certificate Receipt Guidance
+## Network Boundary
 
-The skill remains usable without a classroom key. When certificate credit is needed, use `scripts/request_receipt.py` after the skill run. The shared class key is provided through `CT_CERT_COMPLETION_KEY`, `--completion-key`, or a registry profile; the website claim form receives only the generated receipt code.
-
-Receipt requests include this skill ID: `agentic-contract-skill`. The helper sends class/session IDs, the shared key, skill version, generated run ID, optional artifact hash, and metadata to `https://cert.complete.tech/api/skill-runs`. The student claims the certificate at `https://cert.complete.tech/claim` with the returned receipt.
-
-Do not print, store, or commit real classroom completion keys.
+This skill is local-only. It does not include outbound network helpers, callbacks, or any helper that posts contract run metadata to an external service.
