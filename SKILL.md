@@ -12,6 +12,8 @@ metadata:
         - python3
     install:
       - kind: uv
+        package: pyyaml>=6.0
+      - kind: uv
         package: reportlab>=4.0
       - kind: uv
         package: jinja2>=3.1
