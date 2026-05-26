@@ -2,7 +2,7 @@
 name: agentic-contract-skill
 description: >-
   Generate branded CompleteTech Agentic Development Services Agreement packages from approved provider, client, project, commercial, and governance terms. Use when the user wants configurable contract PDFs, filled Markdown source, and optional envelope output for agentic workflow engagements.
-version: 1.0.6
+version: 1.0.7
 metadata:
   openclaw:
     skillKey: agentic-contract-skill
@@ -79,12 +79,14 @@ Use this skill when approved business terms need to become a structured agreemen
 
 ## Quality Rules
 
-- Do not invent legal terms, company facts, client facts, authority, acceptance, pricing, or signature approval.
-- Preserve demonstration disclaimers unless the user supplies replacement counsel-reviewed terms.
-- Keep unknown provider, client, agreement, delivery, and agentic-development values as `TBD`.
-- Treat generated PDFs and Markdown as draft artifacts until the user confirms the terms and facts.
-- Keep contract generation separate from proposals, invoices, delivery records, security signoff, customer success notes, email copy, and delivery packaging decisions.
-- Do not overwrite user-specific config or generated output without checking whether it contains client-specific facts that should be preserved.
+| Rule | Requirement |
+|---|---|
+| Verified facts only | Do not invent legal terms, company facts, client facts, authority, acceptance, pricing, or signature approval. |
+| Legal text | Preserve demonstration disclaimers unless the user supplies replacement counsel-reviewed terms. |
+| Unknown values | Keep unknown provider, client, agreement, delivery, and agentic-development values as `TBD`. |
+| Artifact status | Treat generated PDFs and Markdown as draft artifacts until the user confirms the terms and facts. |
+| Skill boundary | Keep contract generation separate from proposals, invoices, delivery records, security signoff, customer success notes, email copy, and delivery packaging decisions. |
+| Existing files | Do not overwrite user-specific config or generated output without checking whether it contains client-specific facts that should be preserved. |
 
 ## Configuration Toggles
 
