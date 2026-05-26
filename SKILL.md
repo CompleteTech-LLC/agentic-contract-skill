@@ -2,7 +2,7 @@
 name: agentic-contract-skill
 description: >-
   Generate branded CompleteTech Agentic Development Services Agreement packages from approved provider, client, project, commercial, and governance terms. Use when the user wants configurable contract PDFs, filled Markdown source, and optional envelope output for agentic workflow engagements.
-version: 1.0.8
+version: 1.0.9
 metadata:
   openclaw:
     skillKey: agentic-contract-skill
@@ -157,4 +157,10 @@ The generator uses `reportlab` for PDF creation and `jinja2` for contract templa
 
 ## Network Boundary
 
-This skill is local-only. It does not include outbound network helpers, callbacks, or any helper that posts contract run metadata to an external service.
+| Boundary | Status |
+|---|---|
+| Runtime model | Local-only document generation. |
+| Outbound network helpers | Not included. |
+| Callbacks or telemetry | Not included. |
+| External metadata posting | Not included. |
+| Contract data handling | Remains in local inputs and user-selected output files. |
