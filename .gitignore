@@ -49,3 +49,8 @@ output/certificate_*.pdf
 .vscode/launch.json
 .vscode/*.local.*
 .idea/
+
+# Shared skill layout ignores
+preview/
+output/
+*.tmp

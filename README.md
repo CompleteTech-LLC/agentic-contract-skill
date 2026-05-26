@@ -24,6 +24,9 @@ Part of the CompleteTech LLC agentic services skill library. This skill generate
 
 ## Workflow Diagram
 
+Source: [assets/diagrams/workflow.mmd](assets/diagrams/workflow.mmd).
+
+
 ```mermaid
 flowchart LR
   A[Provider and client facts] --> B[Config and overrides]
@@ -39,6 +42,27 @@ flowchart LR
   class B,D process;
   class E,F,G output;
 ```
+
+## What It Does
+
+- Generates branded agreement package artifacts from verified provider, client, project, commercial, and governance facts.
+- Supports base config plus override files so demos and client-specific packages can reuse the same generator.
+- Produces contract PDF, filled Markdown, and optional addressed envelope output.
+- Keeps legal terms, commercial authority, billing, delivery, and packaging boundaries explicit.
+
+## Contents
+
+- `SKILL.md` - operating instructions, contract boundaries, input rules, and generator guidance.
+- `generate_contract.py` - root CLI entry point for agreement package generation.
+- `config.ini` - default provider, agreement, branding, and envelope configuration.
+- `client_config.example.ini` - example client override configuration.
+- `examples/` - sample override inputs for runnable demos.
+- `templates/` - contract template sources.
+- `assets/diagrams/workflow.mmd` - Mermaid source for the workflow diagram.
+- `assets/examples/` - rendered demonstration artifacts used by the README.
+- `references/` - reserved for supporting reference docs.
+- `scripts/` - reserved for helper automation.
+- `requirements.txt` - Python dependencies for contract rendering.
 
 ## Quick Start
 
@@ -99,6 +123,10 @@ python generate_contract.py --config config.ini --out output/no_envelope_contrac
 ## Branding Assets
 
 - `assets/logo.png` - CompleteTech LLC primary logo, used on contract cover and letterhead.
+
+## Brand Notes
+
+Use a direct, bounded, implementation-focused tone. Do not treat the demo contract as legal advice, and do not invent commercial authority, client acceptance, billing approval, signatures, security signoff, or mailing readiness.
 
 ## Toggles
 
