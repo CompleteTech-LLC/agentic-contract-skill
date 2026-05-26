@@ -2,7 +2,7 @@
 name: agentic-contract-skill
 description: >-
   Generate branded CompleteTech Agentic Development Services Agreement packages from approved provider, client, project, commercial, and governance terms. Use when the user wants configurable contract PDFs, filled Markdown source, and optional envelope output for agentic workflow engagements.
-version: 1.0.5
+version: 1.0.6
 metadata:
   openclaw:
     skillKey: agentic-contract-skill
@@ -53,21 +53,29 @@ Use this skill when approved business terms need to become a structured agreemen
 
 ## Resource Guide
 
-- `generate_contract.py` - contract and envelope generator.
-- `references/agentic_development_agreement.md` - packaged contract template with Jinja2 placeholders.
-- `config.ini` - declarative provider, client, agreement, agentic-development, branding, and envelope settings.
-- `client_config.example.ini`, `examples/minimum_client_override.ini` - override examples.
-- `assets/logo.png` - primary CompleteTech logo.
+| Resource | Role |
+|---|---|
+| `generate_contract.py` | Contract, Markdown, and envelope generator. |
+| `references/agentic_development_agreement.md` | Packaged agreement template with Jinja2 placeholders. |
+| `config.ini` | Default provider, client, agreement, agentic-development, branding, and envelope settings. |
+| `client_config.example.ini` | Client-specific override example. |
+| `examples/minimum_client_override.ini` | Minimal runnable override for demos and smoke tests. |
+| `assets/logo.png` | Primary CompleteTech logo used by rendered artifacts. |
 
 ## Required Inputs
 
-1. Provider business details: legal name, trade name, entity type, formation state, mailing address, email, phone, website, signatory name and title.
-2. Client details: legal name, entity type, address, signatory name and title.
-3. Project details: contract ID, effective date, project name, services summary, timeline, fee amount, payment terms.
-4. Agentic development details: system description, autonomy level, human-in-the-loop requirements, model or stack, deployment environment, evaluation plan, monitoring plan, excluded uses.
-5. Branding and rendering settings: watermark text, monogram, accent color, letterhead on/off, header on/off, footer on/off, envelope on/off.
+| Input Area | Required Facts |
+|---|---|
+| Provider | Legal name, trade name, entity type, formation state, mailing address, email, phone, website, signatory name, signatory title. |
+| Client | Legal name, entity type, address, signatory name, signatory title. |
+| Project | Contract ID, effective date, project name, services summary, timeline, fee amount, payment terms. |
+| Agentic development | System description, autonomy level, human-review requirements, model or stack, deployment environment, evaluation plan, monitoring plan, excluded uses. |
+| Branding | Watermark text, monogram, accent color, letterhead, header, footer, and envelope settings. |
 
-Do not invent real legal or company facts. Use `TBD` for unknown values unless the user explicitly asks for a demo placeholder.
+| Rule | Requirement |
+|---|---|
+| Unknown values | Use `TBD` unless the user explicitly asks for demo placeholders. |
+| Real commitments | Do not invent legal terms, company facts, pricing, authority, or signature approval. |
 
 ## Quality Rules
 
