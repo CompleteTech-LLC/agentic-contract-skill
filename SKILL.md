@@ -2,7 +2,7 @@
 name: agentic-contract-skill
 description: >-
   Generate branded CompleteTech Agentic Development Services Agreement packages from approved provider, client, project, commercial, and governance terms. Use when the user wants configurable contract PDFs, filled Markdown source, and optional envelope output for agentic workflow engagements.
-version: 1.0.4
+version: 1.0.5
 metadata:
   openclaw:
     skillKey: agentic-contract-skill
@@ -25,24 +25,31 @@ metadata:
 
 | What it creates | Best for | Output |
 |---|---|---|
-| Agentic development agreement packages | Approved service terms, pilot agreements, governance clauses, and signature-ready review packets | Branded PDF, filled Markdown, optional addressed envelope |
+| Agentic development agreement package | Approved service terms, pilot agreements, governance clauses, and signature-review packets | Branded PDF, filled Markdown, optional envelope |
 
-This skill turns verified provider, client, scope, fee, timeline, human-review, evaluation, monitoring, and excluded-use facts into a CompleteTech-style agreement package. It is local-only and does not replace legal review, commercial approval, billing, or delivery acceptance.
+Turns verified provider, client, scope, fee, timeline, human-review, evaluation, monitoring, and excluded-use facts into a polished CompleteTech-style agreement package.
 
 ## Included Contract Artifacts
 
-- Agentic Development Services Agreement PDF.
-- Filled Markdown source for review and redline workflows.
-- Configurable branding with cover, letterhead, header, footer, and watermark.
-- Optional #10 addressed envelope PDF for physical delivery packages.
+| Artifact | Purpose |
+|---|---|
+| Agreement PDF | Branded Agentic Development Services Agreement for review and signature workflows. |
+| Filled Markdown | Source text for review, redlines, and archival records. |
+| Branded presentation | Optional cover, letterhead, header, footer, and watermark. |
+| Addressed envelope | Optional #10 envelope PDF for physical delivery packages. |
 
-## Purpose
+## Use When
 
-Generate a configurable CompleteTech LLC Agentic Development Services Agreement PDF with optional cover page, letterhead, header, footer, watermark, and legacy #10 addressed envelope output.
+Use this skill when approved business terms need to become a structured agreement package. It is designed for bounded agentic workflow engagements, scoped pilots, review packets, and reusable contract templates.
 
-## System Boundary
+## Boundaries
 
-This skill owns agreement content and contract package generation from approved terms. Use `agentic-proposal-skill` for commercial scope before signature, `agentic-invoice-skill` for payment requests, `agentic-envelope-skill` for recipient metadata, attachment manifests, delivery-readiness, and standalone mailing packages, `agentic-delivery-skill` after approval, and counsel-reviewed source terms for real legal commitments. Do not use this skill to invent legal terms, client facts, pricing, authority, or signature approval.
+| This skill does | This skill does not |
+|---|---|
+| Generate agreement artifacts from verified terms. | Replace legal review or create legal advice. |
+| Render branded PDFs and filled Markdown. | Invent client facts, pricing, authority, or approvals. |
+| Optionally render an addressed envelope. | Issue invoices, approve delivery, or send documents. |
+| Keep unknown facts as `TBD`. | Convert unapproved proposal terms into commitments. |
 
 ## Resource Guide
 
