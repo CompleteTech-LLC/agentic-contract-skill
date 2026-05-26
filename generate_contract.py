@@ -39,7 +39,7 @@ from reportlab.platypus import (
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 
 BASE_DIR = Path(__file__).resolve().parent
-DEFAULT_TEMPLATE = BASE_DIR / "references" / "agentic_development_agreement.md.j2"
+DEFAULT_TEMPLATE = BASE_DIR / "references" / "agentic_development_agreement.md"
 DEFAULT_CONFIG = BASE_DIR / "config.ini"
 
 REQUIRED_SECTIONS = [

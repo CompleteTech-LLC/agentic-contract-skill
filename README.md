@@ -57,7 +57,7 @@ flowchart LR
 - `config.ini` - default provider, agreement, branding, and envelope configuration.
 - `client_config.example.ini` - example client override configuration.
 - `examples/` - sample override inputs for runnable demos.
-- `references/agentic_development_agreement.md.j2` - packaged contract template source used by the generator.
+- `references/agentic_development_agreement.md` - packaged contract template source used by the generator.
 - `templates/` - GitHub compatibility copy of the contract template.
 - `assets/diagrams/workflow.mmd` - Mermaid source for the workflow diagram.
 - `assets/examples/` - rendered demonstration artifacts used by the README.
