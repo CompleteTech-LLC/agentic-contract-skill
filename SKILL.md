@@ -1,8 +1,8 @@
 ---
 name: agentic-contract-skill
 description: >-
-  Generate configurable CompleteTech LLC Agentic Development Services Agreement PDFs with optional cover page, letterhead, header, footer, watermark, filled Markdown source, and legacy printable envelope output. Use when Codex needs to create or customize agentic development contracts, contract templates, client override configs, or branded agreement artifacts from approved terms.
-version: 1.0.3
+  Generate branded CompleteTech Agentic Development Services Agreement packages from approved provider, client, project, commercial, and governance terms. Use when the user wants configurable contract PDFs, filled Markdown source, and optional envelope output for agentic workflow engagements.
+version: 1.0.4
 metadata:
   openclaw:
     skillKey: agentic-contract-skill
@@ -20,6 +20,21 @@ metadata:
 ---
 
 # Agentic Contract Skill
+
+## At a Glance
+
+| What it creates | Best for | Output |
+|---|---|---|
+| Agentic development agreement packages | Approved service terms, pilot agreements, governance clauses, and signature-ready review packets | Branded PDF, filled Markdown, optional addressed envelope |
+
+This skill turns verified provider, client, scope, fee, timeline, human-review, evaluation, monitoring, and excluded-use facts into a CompleteTech-style agreement package. It is local-only and does not replace legal review, commercial approval, billing, or delivery acceptance.
+
+## Included Contract Artifacts
+
+- Agentic Development Services Agreement PDF.
+- Filled Markdown source for review and redline workflows.
+- Configurable branding with cover, letterhead, header, footer, and watermark.
+- Optional #10 addressed envelope PDF for physical delivery packages.
 
 ## Purpose
 
