@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "family": "completetech-skills",
+  "repository": "CompleteTech-LLC/agentic-contract-skill",
+  "skill_name": "agentic-contract-skill",
+  "kind": "config-generator",
+  "entrypoints": ["generate_contract.py"],
+  "example_inputs": ["config.ini", "examples/northwind_support_triage.ini", "references/agentic_development_agreement.md"],
+  "network_mode": "local",
+  "private": false
+}
