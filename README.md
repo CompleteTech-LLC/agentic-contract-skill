@@ -3,7 +3,10 @@
 # Agentic Contract Skill
 
 <p align="center">
-  <img src="assets/logo.png" alt="CompleteTech LLC logo" width="260">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.png">
+    <img src="assets/logo.png" alt="CompleteTech LLC logo" width="260">
+  </picture>
 </p>
 
 A configurable, branded PDF skill for CompleteTech LLC Agentic Development Services Agreements.
